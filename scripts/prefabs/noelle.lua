@@ -56,7 +56,7 @@ local function onlocomote ( inst )
 		[FACING_DOWN] = "noelle",
 	}
 
-	inst.AnimState:SetBuild( builds_by_dir[inst.AnimState:GetCurrentFacing()] )
+    inst.AnimState:SetBuild( builds_by_dir[inst.AnimState:GetCurrentFacing()] or "" )
 end
 
 --- Runs when the player equips an item.

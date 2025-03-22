@@ -218,7 +218,7 @@ return {
 
 	BATTLECRY =
 	{
-		GENERIC = {"Time to clean up!", "Leave it to me!", "As a dutiful maid would!", "As a good knight should!", "As you wish!"},
+		GENERIC = "Time to clean up!",
 		PIG = "Time to clean up!",
 		PREY = "I'll catch up.",
 		SPIDER = "Time to clean up!",

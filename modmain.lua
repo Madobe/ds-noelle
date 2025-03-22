@@ -76,7 +76,7 @@ RegisterInventoryItemAtlas( "images/inventoryimages/noelle_vision.xml", "noelle_
 ---
 ---Function:
 ---@param act table: The action being performed.
-local CAST_VISION = GLOBAL.Action( {}, -1, false, true )
+local CAST_VISION = GLOBAL.Action( {mount_enabled=true}, -1, false, true )
 CAST_VISION.id = "CAST_VISION"
 CAST_VISION.str = "Use Vision Ability"
 CAST_VISION.fn = function ( act )
