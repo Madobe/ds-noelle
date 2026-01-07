@@ -40,8 +40,8 @@ local function common_fn ( bank, build, DoCastVision, tags )
     inst.Light:SetRadius( 0.1 )
     inst.Light:SetColour( 255/255, 170/255, 0/255 )
 
-	-- It only needs to float on the water if Shipwrecked is enabled
-	if IsDLCEnabled( CAPY_DLC ) then
+	-- It only needs to float on the water if Shipwrecked is enabled (which also includes Hamlet)
+	if IsDLCEnabled( CAPY_DLC ) or IsDLCEnabled( PORKLAND_DLC) then
 		MakeInventoryFloatable( inst, "idle_water", "idle" )
 	end
 

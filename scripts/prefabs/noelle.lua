@@ -123,11 +123,11 @@ local fn = function(inst)
 	inst.components.sanity.neg_aura_mult = TUNING.NOELLE.DIFFICULTY_MULTIPLIER
 
 	if TUNING.NOELLE.ARMORED_ROSE then
-		-- SetAbsorptionAmount doesn't exist before RoG
-		if IsDLCEnabled( REIGN_OF_GIANTS ) then
+		-- SetAbsorptionAmount doesn't exist before RoG, but RoG isn't labeled as active if Hamlet/Shipwrecked are active instead
+		if IsDLCEnabled( REIGN_OF_GIANTS ) or IsDLCEnabled( CAPY_DLC ) or IsDLCEnabled( PORKLAND_DLC ) then
 			inst.components.health:SetAbsorptionAmount( 0.3 )
 		else
-			print( "DS-Noelle: Reign of Giants is not enabled! Armored Rose (30% damage reduction) not applied." )
+			print( "DS-Noelle: Base game does not have SetAbsorptionAmount! Armored Rose (30% damage reduction) not applied." )
 		end
 	end
 	
