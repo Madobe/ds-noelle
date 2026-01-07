@@ -2,7 +2,7 @@
 name = "Noelle - Genshin Impact"
 description = "A maid who faithfully served a chivalric order. She dreamed of joining their ranks someday.\n[Perks]\nArmored Rose: Innate 30% damage reduction.\nNoelle's Vision: Has a protective trinket, giving a 200 HP shield for 12s, 24s cooldown. While the shield is up, 55% chance to heal 10% of own health on attacking. Every 4th attack she inflicts while the shield is on cooldown will reduce it by 1s. While the shield is up, Noelle is protected from the special effects of enemy attacks."
 author = "Sai"
-version = "1.0.1" -- This is the version of the template. Change it to your own number.
+version = "1.0.2" -- This is the version of the template. Change it to your own number.
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = " "
