@@ -40,7 +40,10 @@ local function common_fn ( bank, build, DoCastVision, tags )
     inst.Light:SetRadius( 0.1 )
     inst.Light:SetColour( 255/255, 170/255, 0/255 )
 
-	MakeInventoryFloatable( inst, "idle_water", "idle" )
+	-- It only needs to float on the water if Shipwrecked is enabled
+	if IsDLCEnabled( CAPY_DLC ) then
+		MakeInventoryFloatable( inst, "idle_water", "idle" )
+	end
 
 	inst:AddTag( "cattoy" )
 	inst:AddTag( "genshinvision" )

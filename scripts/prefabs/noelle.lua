@@ -123,7 +123,12 @@ local fn = function(inst)
 	inst.components.sanity.neg_aura_mult = TUNING.NOELLE.DIFFICULTY_MULTIPLIER
 
 	if TUNING.NOELLE.ARMORED_ROSE then
-		inst.components.health:SetAbsorptionAmount( 0.3 )
+		-- SetAbsorptionAmount doesn't exist before RoG
+		if IsDLCEnabled( REIGN_OF_GIANTS ) then
+			inst.components.health:SetAbsorptionAmount( 0.3 )
+		else
+			print( "DS-Noelle: Reign of Giants is not enabled! Armored Rose (30% damage reduction) not applied." )
+		end
 	end
 	
 	if TUNING.NOELLE.NOELLE_VISION_ENABLED then

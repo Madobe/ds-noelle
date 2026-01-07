@@ -15,6 +15,7 @@ dont_starve_compatible = true
 reign_of_giants_compatible = true
 dst_compatible = true
 shipwrecked_compatible = true
+hamlet_compatible = true
 
 
 icon_atlas = "modicon.xml"
